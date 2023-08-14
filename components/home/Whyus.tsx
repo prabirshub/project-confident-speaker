@@ -1,63 +1,146 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import SectionHeading from '../common/SectionHeading'
+import { MdTranscribe } from 'react-icons/md'
 
 const Whyus = () => {
   return (
-    <section className='max-w-10xl mx-auto'>
-      <div className='flex flex-col md:flex-row md:gap-20 justify-between antialiased border-2 border-red-500'>
-        <div className='mx-auto p-4 sm:px-10 h-full'>
-          {/* Blog Post */}
-          <article className='max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16'>
-            <Link className='relative block group' href='#0'>
-              <div
-                className='absolute inset-0 bg-brandPink hidden md:block transform md:translate-y-2 md:translate-x-6 xl:translate-y-6 xl:translate-x-10 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out pointer-events-none rounded-md'
-                aria-hidden='true'
-              ></div>
-              <figure className='relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out'>
-                <Image
-                  className='absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out rounded-md'
-                  src='/assets/1.jpg'
-                  width={540}
-                  height={303}
-                  alt='Blog post'
-                />
-              </figure>
-            </Link>
-
-            <div>
-              <header>
-                <div className='mb-3 pt-10'>
-                  <ul className='flex flex-wrap text-xs font-medium -m-1'>
-                    <li className='m-1'>
-                      <a
-                        className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out'
-                        href='#0'
-                      >
-                        Product
-                      </a>
-                    </li>
-                    <li className='m-1'>
-                      <a
-                        className='inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-blue-500 hover:bg-blue-600 transition duration-150 ease-in-out'
-                        href='#0'
-                      >
-                        Engineering
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <SectionHeading>
-                  Desigining a functional workfplow at home
-                </SectionHeading>
-              </header>
-              <p className='text-lg text-gray-400 flex-grow'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
+    <section className='relative mx-auto max-w-10xl lg:py-8 mb-28 px-4'>
+      <div className='flex flex-col px-4 lg:flex-row lg:gap-40'>
+        <div className='flex flex-col w-full justify-center '>
+          <div className='p-1 bg-brandPink self-start mb-2 md:mb-4'>
+            <h3 className='uppercase text-white text-xs'>about us</h3>
+          </div>
+          <h2 className='text-xl sm:text-3xl md:text-4xl capitalize font-semibold mb-6 md:mb-10'>
+            Why Confident speakers academy
+          </h2>
+          <p className='text-zinc-600 leading-6 md:mb-12'>
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident
+          </p>
+          <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-12'>
+            {/* Card 1 */}
+            <div className='flex justify-start gap-4 mt-8'>
+              <div>
+                <MdTranscribe className='text-6xl' />
+              </div>
+              <div>
+                <h3 className='uppercase font-semibold text-sm mb-4 tracking-wide'>
+                  Consulting training
+                </h3>
+                <p className='text-zinc-600 leading-6'>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum genera.
+                </p>
+              </div>
             </div>
-          </article>
+            {/* Card 2 */}
+            <div className='flex justify-start gap-4 mt-8'>
+              <div>
+                <MdTranscribe className='text-6xl' />
+              </div>
+              <div>
+                <h3 className='uppercase font-semibold text-sm mb-4 tracking-wide'>
+                  Advisor Training Program
+                </h3>
+                <p className='text-zinc-600 leading-6'>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum genera.
+                </p>
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className='flex justify-start gap-4 mt-8'>
+              <div>
+                <MdTranscribe className='text-6xl' />
+              </div>
+              <div>
+                <h3 className='uppercase font-semibold text-sm mb-4 tracking-wide'>
+                  Consulting training
+                </h3>
+                <p className='text-zinc-600 leading-6'>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum genera.
+                </p>
+              </div>
+            </div>
+            {/* Card 4 */}
+            <div className='flex justify-start gap-4 mt-8'>
+              <div>
+                <MdTranscribe className='text-6xl' />
+              </div>
+              <div>
+                <h3 className='uppercase font-semibold text-sm mb-4 tracking-wide'>
+                  Consulting training
+                </h3>
+                <p className='text-zinc-600 leading-6'>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum genera.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='container max-w-md mx-auto lg:w-1/2 mt-12 lg:mt-0'>
+          <div className='w-full flex items-center justify-center p-8 bg-brandPink/60'>
+            <p className='text-center tracking-wider font-semibold md:text-xl md:leading-8 text-white'>
+              We provide the best services on the market for your business plan
+              and your life.
+            </p>
+          </div>
+          <div>
+            <div className='container mx-auto py-8'>
+              <form className='w-full max-w-md mx-auto bg-white p-8 rounded-md shadow-md'>
+                <div className='mb-4'>
+                  <select
+                    className='w-full rounded-lg shadow-sm border-zinc-300 focus:border-brandPink focus:outline-none focus:ring-1 focus:ring-brandPink'
+                    id='training-type'
+                    name='training-type'
+                  >
+                    <option value='' disabled selected>
+                      Please Select
+                    </option>
+                    <option value='co-training'>Corporate Training</option>
+                    <option value='ind-training'>Individual Training</option>
+                  </select>
+                </div>
+                <div className='mb-4'>
+                  <input
+                    className='w-full rounded-lg shadow-sm border-zinc-300 focus:border-brandPink focus:outline-none focus:ring-1 focus:ring-brandPink'
+                    type='text'
+                    id='name'
+                    name='name'
+                    placeholder='Name *'
+                  />
+                </div>
+                <div className='mb-4'>
+                  <input
+                    className='w-full rounded-lg shadow-sm border-zinc-300 focus:border-brandPink focus:outline-none focus:ring-1 focus:ring-brandPink'
+                    type='email'
+                    id='email'
+                    name='email'
+                    placeholder='Email *'
+                  />
+                </div>
+                <div className='mb-4'>
+                  <input
+                    className='w-full rounded-lg shadow-sm border-zinc-300 focus:border-brandPink focus:outline-none focus:ring-1 focus:ring-brandPink'
+                    type='number'
+                    id='phone'
+                    name='phone'
+                    placeholder='Phone'
+                  />
+                </div>
+
+                <button
+                  className='w-full bg-brandPink/75 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-brandPink transition duration-300 uppercase'
+                  type='submit'
+                >
+                  Send a request
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
